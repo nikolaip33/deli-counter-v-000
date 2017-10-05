@@ -8,7 +8,7 @@ def line(array)
     puts "The line is currently empty."
   else
     lineOut = "The line is currently:"
-    array.each_with_index { |name, index| lineOut += " #{index+1}. #{name}" }
+    array.each_with_index(1) { |name, index| lineOut += " #{index}. #{name}" }
     puts lineOut
   end
 end
